@@ -4,6 +4,8 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
+
+
 .footer .icon-link {
     font-size: 25px;
     color: #000;
@@ -23,6 +25,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+iframe {
+    display: flex;
+    width: 80vw;
+    height: 50vh;
+    border-style:none;
 }
 
 .teaser .hero-body {
