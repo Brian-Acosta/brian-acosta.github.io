@@ -33,21 +33,6 @@
         ></script>
     </head>
     <body>
-        <nav class="navbar" role="navigation" aria1-label="main navigation">
-            <div class="navbar-brand">
-                <a
-                    role="button"
-                    class="navbar-burger"
-                    aria-label="menu"
-                    aria-expanded="false"
-                >
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-        </nav>
-
         <header class="header">
             <div class="container">
                 <div class="columns is-centered">
@@ -59,6 +44,9 @@
             <div class="hero-body">
                 <div class="container is-max-desktop">
                     <div class="content">
+                        <br />
+                        <br />
+                        <br />
                         <img
                             alt=""
                             src="images/cassie.jpg"
@@ -124,7 +112,7 @@
         </section>
 
         <section class="section">
-            <div class="container is-max-desktop">
+            <div class="container is-max-desktop" id="bio">
                 <!-- Abstract. -->
                 <div class="columns is-centered has-text-centered">
                     <div class="column is-4">
@@ -137,13 +125,14 @@
                             <p>
                                 Hi, I'm Brian. I'm a robotics researcher
                                 interested in making dynamic robots do real
-                                things in the real world. I've developed blind
-                                and vision-aided walking controllers for bipedal
-                                robots and deployed them on the bipedal robot
-                                Cassie.
+                                things in the real world. My current research focuses
+                                on designing walking controllers for bipedal robots which
+                                leverage terrain information from vision.
+                                I've designed and impelemented several walking controllers
+                                and deployed them on the bipedal robot Cassie.
                             </p>
                             <p>
-                                I'm currently a PhD student in the
+                                I'm a PhD student in the
                                 <a href="https://dair.seas.upenn.edu"
                                     >DAIR Lab</a
                                 >
@@ -158,6 +147,109 @@
                                 intern at John Deere and Intuitive Surgical.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div id="research" class="container is-max-desktop">
+                <!-- Abstract. -->
+                <h2 class="title is-2">Research</h2>
+                <div class="columns is-centered">
+                    <div class="column is-4">
+                        <div class="content">
+                            <img src="images/cassie_log_grassy_hill.png" />
+                            <img src="images/cassie_hardware_grassy_hill.jpg" />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                        <h3 class="title is-3">
+                            Bipedal Walking on Constrained Footholds with MPC
+                            Footstep Control
+                        </h3>
+                        <div class="publication-links" style="text-align: center">
+                        <span class="link-block">
+                            <a href="https://www.youtube.com/watch?v=aTI6s2a3JSg"
+                                class="external-link button is-normal is-rounded is-dark"
+                            >
+                                <span class="icon">
+                                    <i class="fab fa-youtube"></i>
+                                </span>
+                                <span>video</span>
+                            </a>
+                        </span>
+                        <span class="link-block">
+                            <a
+                                href="https://dair.seas.upenn.edu/assets/pdf/Acosta2023.pdf"
+                                class="external-link button is-normal is-rounded is-dark"
+                            >
+                                <span>pdf</span>
+                            </a>
+                        </span>
+                        <span class="link-block">
+                            <a
+                                href="http://arxiv.org/abs/2309.07993"
+                                class="external-link button is-normal is-rounded is-dark"
+                            >
+                                <span>arxiv</span>
+                            </a>
+                        </span>
+                        <span class="link-block">
+                            <a
+                                href="https://ieeexplore.ieee.org/abstract/document/10375170"
+                                class="external-link button is-normal is-rounded is-dark"
+                            >
+                                <span>publisher</span>
+                            </a>
+                        </span>
+                        </div>
+                        <br/>
+                        <pre><code style="text-align: left">
+@inproceedings{Acosta2023,
+    title = {Bipedal Walking on Constrained Footholds with MPC Footstep Control},
+    author = {Acosta, Brian and Posa, Michael},
+    year = {2023},
+    booktitle = {IEEE-RAS International Conference on Humanoid Robotics},
+    doi = {10.1109/Humanoids57100.2023.10375170}
+}
+                        </code></pre>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div id="misc" class="container is-max-desktop">
+                <!-- Abstract. -->
+                <h2 class="title is-2">Misc</h2>
+                <div class="columns is-centered">
+                    <div class="column is-3">
+                        <div class="content">
+                            <img src="images/cassie_fccqp.png" />
+                        </div>
+                    </div>
+                    <div class="column">
+                    <div class="content has-text-justified">
+                        <h3 class="title is-3">
+                            Friction Cone Constrained QP Solver for Whole Body Control
+                        </h3>
+                        <p>
+                        It turns out that a straightforward ADMM implementation is
+                        surprisingly performant for solving whole body control QPs that arise
+                        in optimization based control of legged robots. As a bonus, we can use
+                        the full lorentz-cone constraint for the friction cone, insterad of the common
+                        pyramidal approximation.
+                        </p>
+                        <p>
+                            Check out the github repo of my implementation
+                            <a href="https://github.com/Brian-Acosta/fcc_qp">here</a>.
+                        </p>
+
+                    </div>
                     </div>
                 </div>
             </div>
