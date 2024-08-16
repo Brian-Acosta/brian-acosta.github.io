@@ -3,6 +3,10 @@ a {
     border: none, outline: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Noto Sans", sans-serif;
 }
