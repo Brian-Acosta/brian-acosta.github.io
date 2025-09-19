@@ -1,6 +1,7 @@
 img,
 a {
-    border: none, outline: none;
+    border: none;
+    outline: none;
 }
 
 html {
@@ -8,7 +9,7 @@ html {
 }
 
 body {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "IBM Plex Mono", monospace;
 }
 
 .footer .icon-link {
@@ -38,15 +39,16 @@ body {
 }
 
 .teaser {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "IBM Plex Mono", monospace;
 }
 
 .title {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 2px;
 }
 
-.publication-title {}
+.publication-title {
+}
 
 .publication-banner {
     max-height: parent;
@@ -60,14 +62,15 @@ body {
     object-fit: fit;
 }
 
-.publication-header .hero-body {}
+.publication-header .hero-body {
+}
 
 .publication-title {
-    font-family: "Google Sans", sans-serif;
+    font-family: "IBM Plex Mono", monospace;
 }
 
 .publication-authors {
-    font-family: "Google Sans", sans-serif;
+    font-family: "IBM Plex Mono", monospace;
 }
 
 .publication-venue {
@@ -82,7 +85,8 @@ body {
     font-weight: bolder;
 }
 
-.publication-authors {}
+.publication-authors {
+}
 
 .publication-authors a {
     color: hsl(204, 86%, 53%) !important;
@@ -96,7 +100,8 @@ body {
     display: inline-block;
 }
 
-.publication-banner img {}
+.publication-banner img {
+}
 
 .publication-authors {
     /*color: #4286f4;*/
@@ -120,7 +125,8 @@ body {
     height: 100%;
 }
 
-.publication-body img {}
+.publication-body img {
+}
 
 .results-carousel {
     overflow: hidden;
@@ -149,7 +155,8 @@ body {
     border-radius: 5px;
 }
 
-.interpolation-video-column {}
+.interpolation-video-column {
+}
 
 .interpolation-panel .slider {
     margin: 0 !important;
